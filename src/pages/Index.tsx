@@ -13,9 +13,9 @@ const Index = () => {
         {/* Hero Section */}
         <section className="bg-gradient-to-r from-primary to-primary/80 text-white py-20 mt-16">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Find Exactly What You're Looking For</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Shoporia</h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              Connect with local clothing shops to find the perfect outfit. Submit a request, get responses, and shop locally.
+              One stop solution for shopaholic
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link to="/create-request">
@@ -76,7 +76,7 @@ const Index = () => {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-4">Ready to Find Your Perfect Style?</h2>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Join StyleSnap today and connect with local shops that have exactly what you're looking for.
+              Join Shoporia today and connect with local shops that have exactly what you're looking for.
             </p>
             <Link to="/create-request">
               <Button size="lg" className="bg-primary hover:bg-primary/90">
@@ -93,7 +93,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-4 md:mb-0">
               <ShoppingBag className="h-6 w-6 mr-2" />
-              <span className="font-bold text-xl">StyleSnap</span>
+              <span className="font-bold text-xl">Shoporia</span>
             </div>
             <div className="flex space-x-6">
               <Link to="/" className="hover:text-primary">Home</Link>
@@ -103,7 +103,7 @@ const Index = () => {
             </div>
           </div>
           <div className="mt-8 text-center text-gray-400">
-            <p>&copy; {new Date().getFullYear()} StyleSnap. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Shoporia. All rights reserved.</p>
           </div>
         </div>
       </footer>

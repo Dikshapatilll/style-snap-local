@@ -13,7 +13,7 @@ const NavBar = () => {
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center">
             <ShoppingBag className="h-6 w-6 text-primary mr-2" />
-            <span className="font-bold text-xl text-gray-800">StyleSnap</span>
+            <span className="font-bold text-xl text-gray-800">Shoporia</span>
           </Link>
 
           {/* Desktop navigation */}
