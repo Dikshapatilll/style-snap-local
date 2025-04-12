@@ -1,7 +1,6 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ShoppingBag, Search, MapPin } from "lucide-react";
+import { ShoppingBag, Search, MapPin, Store } from "lucide-react";
 import NavBar from "@/components/NavBar";
 
 const Index = () => {
@@ -24,8 +23,9 @@ const Index = () => {
                 </Button>
               </Link>
               <Link to="/shop-profile">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                  I'm a Shop Owner
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 flex items-center">
+                  <Store className="h-5 w-5 mr-2" />
+                  Shop Owner Portal
                 </Button>
               </Link>
             </div>
@@ -35,7 +35,7 @@ const Index = () => {
         {/* How It Works Section */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">How StyleSnap Works</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">How Shoporia Works</h2>
             
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-sm text-center">
@@ -78,11 +78,19 @@ const Index = () => {
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
               Join Shoporia today and connect with local shops that have exactly what you're looking for.
             </p>
-            <Link to="/create-request">
-              <Button size="lg" className="bg-primary hover:bg-primary/90">
-                Start Now
-              </Button>
-            </Link>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <Link to="/create-request">
+                <Button size="lg" className="bg-primary hover:bg-primary/90">
+                  Start Now
+                </Button>
+              </Link>
+              <Link to="/shop-profile">
+                <Button size="lg" variant="secondary" className="flex items-center">
+                  <Store className="h-5 w-5 mr-2" />
+                  Shop Owner Portal
+                </Button>
+              </Link>
+            </div>
           </div>
         </section>
       </main>

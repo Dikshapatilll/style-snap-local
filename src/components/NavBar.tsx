@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Home, Search, ShoppingBag, User, Menu, X } from "lucide-react";
+import { Home, Search, ShoppingBag, User, Menu, X, Store } from "lucide-react";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,9 +26,11 @@ const NavBar = () => {
               <Search className="h-4 w-4 mr-1" />
               <span>Browse</span>
             </Link>
-            <Link to="/shop-profile" className="text-gray-600 hover:text-primary flex items-center">
-              <ShoppingBag className="h-4 w-4 mr-1" />
-              <span>For Shops</span>
+            <Link to="/shop-profile">
+              <Button variant="secondary" className="flex items-center">
+                <Store className="h-4 w-4 mr-2" />
+                <span>Shop Owner Portal</span>
+              </Button>
             </Link>
             <Link to="/profile">
               <Button variant="outline" className="ml-4">
@@ -77,11 +79,11 @@ const NavBar = () => {
             </Link>
             <Link 
               to="/shop-profile" 
-              className="text-gray-600 hover:text-primary py-2 flex items-center"
+              className="bg-secondary text-foreground py-2 px-4 rounded-md flex items-center"
               onClick={() => setIsMenuOpen(false)}
             >
-              <ShoppingBag className="h-4 w-4 mr-2" />
-              <span>For Shops</span>
+              <Store className="h-4 w-4 mr-2" />
+              <span>Shop Owner Portal</span>
             </Link>
             <Link 
               to="/profile" 
